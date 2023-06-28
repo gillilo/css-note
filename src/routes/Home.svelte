@@ -7,11 +7,11 @@
     { href: '/ex3', name: 'CSS Only Clarity Glass Animation Effects'},
     { href: '/ex4', name: 'How to Create Random Website Background Generator using CSS & Javascript | Anime.js'},
     { href: '/ex5', name: 'Happy Holi | Animation Effects using Html CSS & Javascript'},
-    { href: '/ex6', name: 'Ex6'},
-    { href: '/ex7', name: 'Ex7'},
-    { href: '/ex8', name: 'Ex8'},
-    { href: '/ex9', name: 'Ex9'},
-    { href: '/ex10', name: 'Ex10'},
+    { href: '/ex6', name: 'CSS Text Animation Effects | Infinite Ticker'},
+    { href: '/ex7', name: 'Animating Clip-path using CSS and Vanilla Javascript'},
+    { href: '/ex8', name: 'CSS Water Wave Background Animation Effects | Html CSS'},
+    { href: '/ex9', name: 'CSS Only Animated Backgrounds Effects'},
+    { href: '/ex10', name: 'CSS Only Cubes Hover Effects'},
   ]
 </script>
 

@@ -47,6 +47,7 @@
 </div>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
   .body {
     display: flex;
     justify-content: center;
@@ -56,6 +57,7 @@
     .text {
       color: white;
       font-size: 10em;
+      font-family: 'Belanosima', sans-serif;
     }
     .container {
       overflow: hidden;

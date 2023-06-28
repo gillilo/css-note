@@ -1,7 +1,17 @@
 <!-- Happy Holi | Animation Effects using Html CSS & Javascript -->
 <!-- https://www.youtube.com/watch?v=bQzTUsMqagM -->
 <script>
-
+  let images = [
+    'url(/assets/ex5/png1.png)',
+    'url(/assets/ex5/png2.png)',
+    'url(/assets/ex5/png3.png)',
+    'url(/assets/ex5/png4.png)',
+    'url(/assets/ex5/png5.png)',
+    'url(/assets/ex5/png6.png)',
+    'url(/assets/ex5/png7.png)',
+    'url(/assets/ex5/png8.png)',
+    'url(/assets/ex5/png9.png)',
+  ]
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -10,22 +20,32 @@
   const y = e.pageY - e.target.offsetTop
 
   const splash = document.createElement('span')
-  splash.style.left = x + 'px'
-  splash.style.top = y + 'px'
+  splash.style.left = (x - 250) + 'px'
+  splash.style.top = (y - 250) + 'px'
   splash.style.position = 'absolute'
   splash.style.pointerEvents = 'none'
-  splash.style.width = '300px'
-  splash.style.height = '300px'
-  splash.style.background = 'red'
+  splash.style.width = '500px'
+  splash.style.height = '500px'
+  splash.style.backgroundSize = 'contain'
+  splash.style.backgroundRepeat = 'no-repeat'
+  splash.animate(
+    [
+      { opacity: 1, easing: "ease-out" },
+      { opacity: 0, easing: "ease-in" },
+    ],
+    5200
+  )
+  let image = images[Math.floor(Math.random() * images.length)]
+  splash.style.backgroundImage = image
 
   document.querySelector('.body').appendChild(splash)
 
   setTimeout(() => {
     splash.remove()
-  }, 4000)
+  }, 5000)
 }}>
 
-  <h2>Happy Holi</h2>
+  <h2>Click!</h2>
 
 </div>
 

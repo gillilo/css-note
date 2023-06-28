@@ -1,59 +1,19 @@
 <!-- CSS Only Animated Background Particles Effects | Html CSS Animation -->
 <!-- https://www.youtube.com/watch?v=-EC9G9VKqjo -->
+<script>
+  const w = window.innerWidth
+  const array = []
+  for(let i = 0 ; i < w / 38 ; i++) {
+    array.push(10 + Math.floor(Math.random() * 20))
+  }
+</script>
 <div class="body">
 
   <div class="container">
     <div class="particles">
-      <span style="--i:11"></span>
-      <span style="--i:12"></span>
-      <span style="--i:24"></span>
-      <span style="--i:10"></span>
-      <span style="--i:14"></span>
-      <span style="--i:23"></span>
-      <span style="--i:18"></span>
-      <span style="--i:16"></span>
-      <span style="--i:19"></span>
-      <span style="--i:20"></span>
-      <span style="--i:22"></span>
-      <span style="--i:25"></span>
-      <span style="--i:18"></span>
-      <span style="--i:21"></span>
-      <span style="--i:13"></span>
-      <span style="--i:15"></span>
-      <span style="--i:26"></span>
-      <span style="--i:17"></span>
-      <span style="--i:13"></span>
-      <span style="--i:28"></span>
-      <span style="--i:11"></span>
-      <span style="--i:12"></span>
-      <span style="--i:24"></span>
-      <span style="--i:10"></span>
-      <span style="--i:14"></span>
-      <span style="--i:23"></span>
-      <span style="--i:18"></span>
-      <span style="--i:16"></span>
-      <span style="--i:19"></span>
-      <span style="--i:20"></span>
-      <span style="--i:22"></span>
-      <span style="--i:25"></span>
-      <span style="--i:18"></span>
-      <span style="--i:21"></span>
-      <span style="--i:13"></span>
-      <span style="--i:15"></span>
-      <span style="--i:26"></span>
-      <span style="--i:17"></span>
-      <span style="--i:13"></span>
-      <span style="--i:28"></span>
-      
-      <span style="--i:11"></span>
-      <span style="--i:17"></span>
-      <span style="--i:21"></span>
-      <span style="--i:12"></span>
-      <span style="--i:18"></span>
-      <span style="--i:26"></span>
-      <span style="--i:13"></span>
-      <span style="--i:16"></span>
-      <span style="--i:20"></span>
+      {#each array as a, i (i)}
+        <span style={`--i:${a}`}></span>
+      {/each}
     </div>
   </div>
 
@@ -75,7 +35,7 @@
         position: relative;
         display: flex;
         z-index: 1;
-        padding: 0 20px;
+        // padding: 0 20px;
         span {
           position: relative;
           bottom: 30px;
