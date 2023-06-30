@@ -12,10 +12,21 @@
     { href: '/ex8', name: 'CSS Animation Effects'},
     { href: '/ex9', name: 'CSS Only Animated Backgrounds Effects'},
     { href: '/ex10', name: 'CSS Only Cubes Hover Effects'},
+    
+    { href: '/ex11', name: 'Javascript Menu Hover Effects | Html CSS'},
+    { href: '/ex12', name: ''},
+    { href: '/ex13', name: ''},
+    { href: '/ex14', name: ''},
+    { href: '/ex15', name: ''},
+    { href: '/ex16', name: ''},
+    { href: '/ex17', name: ''},
+    { href: '/ex18', name: ''},
+    { href: '/ex19', name: ''},
+    { href: '/ex20', name: ''},
   ]
 </script>
 
-{#each menus as {href, name} (name)}
+{#each menus as {href, name} (href)}
 <div>
   <a 
     use:link
