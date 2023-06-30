@@ -9,7 +9,7 @@
     { href: '/ex5', name: 'Happy Holi | Animation Effects using Html CSS & Javascript'},
     { href: '/ex6', name: 'CSS Text Animation Effects | Infinite Ticker'},
     { href: '/ex7', name: 'Animating Clip-path using CSS and Vanilla Javascript'},
-    { href: '/ex8', name: 'CSS Water Wave Background Animation Effects | Html CSS'},
+    { href: '/ex8', name: 'CSS Animation Effects'},
     { href: '/ex9', name: 'CSS Only Animated Backgrounds Effects'},
     { href: '/ex10', name: 'CSS Only Cubes Hover Effects'},
   ]
