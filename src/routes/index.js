@@ -18,6 +18,8 @@ import Nav1 from './nav/Nav1.svelte'
 import Button1 from './button/Button1.svelte'
 import Button2 from './button/Button2.svelte'
 
+import Login1 from './page/Login1.svelte'
+
 import NotFound from './NotFound.svelte'
 
 
@@ -41,6 +43,8 @@ export default {
 
   '/button/1': Button1,
   '/button/2': Button2,
+
+  '/page/login/1': Login1,
   
   '*': NotFound,
 }
