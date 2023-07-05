@@ -2,7 +2,6 @@
   import { fade } from 'svelte/transition'
   import Router, { location } from 'svelte-spa-router'
   import routes from '~/routes'
-  import Header from "~/components/Header.svelte"
 </script>
 
 <!-- <Header /> -->
