@@ -89,6 +89,14 @@
     },
   ]
 
+  const component = [
+    { 
+      group: 'component',
+      href: '/component/1', 
+      name: 'CSS Rank List UI Design with Hover Effect | Html CSS'
+    },
+  ]
+
   const menus = [
     ...background,
     ...interactive,
@@ -165,6 +173,19 @@
 {/each}
 <br /><hr /><br />
 {#each page as {href, name, group}, i (href)}
+{#if i == 0}
+  <h3>{group}</h3>
+{/if}
+<div>
+  <a 
+    use:link
+    {href}>
+    {name}
+  </a>
+</div>
+{/each}
+<br /><hr /><br />
+{#each component as {href, name, group}, i (href)}
 {#if i == 0}
   <h3>{group}</h3>
 {/if}
